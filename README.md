@@ -28,14 +28,14 @@ By default, flask will run on port 5000.
 
 You should be able to view the homepage as below :
 <p align = "center">
-<img src = "http://www.thepythonblog.com/wp-content/uploads/2019/02/Homepage.png">
+<img src = "http://www.thepythonblog.com/wp-content/uploads/2019/02/Homepage.png" width = 480>
 </p>
 
 Enter valid numerical values in all 3 input boxes and hit Predict.
 
 If everything goes well, you should  be able to see the predcited salary vaule on the HTML page!
 <p align = "center">
-<img src = "http://www.thepythonblog.com/wp-content/uploads/2019/02/Result.png">
+<img src = "Screenshot from 2020-04-18 01-54-15.png" width = 480>
 </p>
 
 4. You can also send direct POST requests to FLask API using Python's inbuilt request module
