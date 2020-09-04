@@ -23,7 +23,7 @@ def home():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-	regressor = load_model('gru.h5')
+	regressor = load_model('gru.h5',compile=True)
 	i = [int(x) for x in request.form.values()]
 	def predict(coef, history):
 		yhat = 0.0
