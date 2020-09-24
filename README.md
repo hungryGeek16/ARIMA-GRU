@@ -1,4 +1,4 @@
-## ML-Model-Flask-Deployment
+## ML-DL-Model-Flask-Deployment
 This is a demo project to elaborate how Machine Learn Models are deployed on production using Flask API
 
 ### Paper Link which explains it's working: [Refer](https://www.researchgate.net/publication/341873237_Stock_Prediction_using_Hybrid_ARIMA_and_GRU_Models)
