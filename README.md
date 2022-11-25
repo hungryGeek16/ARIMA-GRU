@@ -112,13 +112,14 @@ import matplotlib.dates as mdates
 import tensorflow as tf
 import yfinance as yf  
 import matplotlib.pyplot as plt
-from statsmodels.tsa.arima.model import ARIMA
 import time
 ```
 
 ```python
-df = yf.download('AAPL','2015-01-01','2020-01-01')
-fig, ax = plt.subplots(1, figsize=(30, 7), constrained_layout=True)
+df = yf.download('GOOGL','2000-01-01','2020-01-01') # Download Google stocks from 2000-2020
+
+# Setup time series plots
+fig, ax = plt.subplots(1, figsize=(30, 7), constrained_layout=True) 
 ax.plot(df.index, df['Adj Close'])
 ax.xaxis.set_major_locator(mdates.YearLocator(3))
 ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y'))
@@ -126,7 +127,7 @@ ax.grid(True)
 ax.set_ylabel('Open')
 ```
 ```python
-# Taking adjusted price
+# Taking adjusted price variable from loaded dataframe
 df = df['Adj Close']
 df = pd.concat([df, df.diff()], axis=1)
 df.columns = ["Adj", "Diff"]
@@ -208,6 +209,7 @@ pyplot.savefig('trend')
 | Loss Standalone | 0.00036 | 
 | Improvement | 50% |
 
+2.
 | Category | Values |
 | ------------- | ------------- | 
 | Year | 2010-2020  | 
@@ -217,6 +219,7 @@ pyplot.savefig('trend')
 | Loss Standalone | 0.00041 |
 | Improvement| 31% |
 
+3.
 | Category | Values |
 | ------------- | ------------- |
 | Year | 2015-2020  | 
