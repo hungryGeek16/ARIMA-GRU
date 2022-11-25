@@ -198,9 +198,31 @@ pyplot.savefig('trend')
 
 # Experimental Results:
 
-| Year | Test vs Predicted Ours  | Test vs Predicted Standalone GRU  | Loss Ours | Loss GRUs | Percentage of improvement |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| 2000-2020  | <img src = "/ims/google_2000.png" width = 200>  | <img src = "20_year_60_lag_normal.png" width = 200>  | 0.00018  | 0.00036 | 50% |
-| 2010-2020  | <img src = "/ims/google_2010.png" width = 200>  | <img src = "10_year_60_lag_normal.png" width = 200>  | 0.00028  | 0.00041 | 31% |
-| 2015-2020  | <img src = "/ims/google_2015.png" width = 200>  | <img src = "5_year_60_lag_normal.png" width = 200>  | 0.0010 | 0.0021 | 52% |
+1. 
+| Category | Values |
+| ------------- | ------------- | 
+| Year | 2000-2020  |
+| Ours Trend| <img src = "/ims/google_2000.png">  |
+| Standalone Trend | <img src = "20_year_60_lag_normal.png">  |
+| Loss Ours | 0.00018  | 
+| Loss Standalone | 0.00036 | 
+| Improvement | 50% |
+
+| Category | Values |
+| ------------- | ------------- | 
+| Year | 2010-2020  | 
+| Ours Trend | <img src = "/ims/google_2010.png">  | 
+| Standalone Trend | <img src = "10_year_60_lag_normal.png">  | 
+| Loss Ours | 0.00028  | 
+| Loss Standalone | 0.00041 |
+| Improvement| 31% |
+
+| Category | Values |
+| ------------- | ------------- |
+| Year | 2015-2020  | 
+| Ours Trend | <img src = "/ims/google_2020.png">  | 
+| Standalone Trend | <img src = "5_year_60_lag_normal.png">  | \
+| Loss Ours | 0.0010 | 
+| Loss Standlone | 0.0021 |
+| Improvement | 52% |
 
